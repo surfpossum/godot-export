@@ -2,6 +2,7 @@ on:
   push:
     #tags:
       #- "v*-test"
+      #just testing
 
 jobs:
   export_game:

@@ -43,7 +43,7 @@ async function exportBuilds(): Promise<BuildResult[]> {
     return [];
   }
 
-  core.startGroup('🕹️ Downloading Godot');
+  core.startGroup('🕹️ Downloading Godot beep boop');
   await downloadGodot();
   core.endGroup();
 

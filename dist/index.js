@@ -88322,9 +88322,10 @@ function configureAndroidExport() {
 }
 /** Open the editor in headless mode once, to import all assets, creating the `.godot` directory if it doesn't exist. */
 async function importProject() {
-    core.startGroup('🎲 Import project beep boop');
+    core.startGroup('🎲 Import project');
     // this import tends to fail on MacOS for some reason (exit code 1), but a fail here doesn't necessarily mean the export will fail
     try {
+		core.info(GODOT_PROJECT_FILE_PATH);
         await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '--editor', '--quit']);
     }
     catch (error) {

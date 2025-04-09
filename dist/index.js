@@ -88325,7 +88325,7 @@ async function importProject() {
     core.startGroup('🎲 Import project beep boop');
     // this import tends to fail on MacOS for some reason (exit code 1), but a fail here doesn't necessarily mean the export will fail
     try {
-        await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '-editor', '--quit-after 2']);
+        await (0,exec.exec)(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '--editor', '--quit']);
     }
     catch (error) {
         core.warning(`Import appears to have failed. Continuing anyway, but exports may fail. ${error}`);

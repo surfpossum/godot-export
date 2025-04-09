@@ -1,5 +1,5 @@
 # GLOBAL SCRIPT. ACCESS via RaycastSystem.foo()
-# Raycast queries are defined here. All other modules can use it.
+# Raycast queries are defined here. All other modules can use it. Blerp
 # from https://gameidea.org/2024/12/13/making-raycast-system-for-rts-game/
 
 extends Node3D

@@ -459,7 +459,7 @@ async function importProject(): Promise<void> {
   // this import tends to fail on MacOS for some reason (exit code 1), but a fail here doesn't necessarily mean the export will fail
   try {
     await exec(godotExecutablePath, [GODOT_PROJECT_FILE_PATH, '--headless', '-e', '--quit-after 2']);
-    core.warning(`This is a warning test.`);
+    core.info(`info test 1`);
   } catch (error) {
     core.warning(`Import appears to have failed. Continuing anyway, but exports may fail. ${error}`);
   }

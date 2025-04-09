@@ -87955,7 +87955,7 @@ const GODOT_EXPORT_TEMPLATES_PATH = external_path_default().resolve(external_pat
 const GODOT_CONFIG_PATH = external_path_default().resolve(external_path_default().join(external_os_.homedir(), '/.config/godot'));
 const GODOT_BUILD_PATH = external_path_default().join(GODOT_WORKING_PATH, 'builds');
 const GODOT_ARCHIVE_PATH = external_path_default().join(GODOT_WORKING_PATH, 'archives');
-const GODOT_PROJECT_PATH = external_path_default().resolve(external_path_default().join(RELATIVE_PROJECT_PATH));
+const GODOT_PROJECT_PATH = external_path_default().resolve(RELATIVE_PROJECT_PATH);
 const GODOT_PROJECT_FILE_PATH = external_path_default().join(GODOT_PROJECT_PATH, 'project.godot');
 
 
